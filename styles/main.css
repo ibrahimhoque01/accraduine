@@ -1,0 +1,558 @@
+/*colour is fef7e3*/
+
+/*---------------------------------------*/
+/*General Styles*/
+/*---------------------------------------*/
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html,
+body{
+  font-family: 'Lato', sans-serif;
+  font-weight:400;
+
+  font-size:20px;
+  overflow-x:hidden;
+  background-color: #faf9f8;
+
+}
+
+
+.row{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+
+
+/*---------------------------------------*/
+/*Headings*/
+/*---------------------------------------*/
+
+h1,
+h2{
+  font-weight:300;
+  margin:0;
+  text-transform: uppercase;
+}
+
+h2{
+  text-align:center;
+  margin-bottom:15px;
+}
+
+h2:after{
+  display: block;
+    height: 2px;
+    background-color: #d0ba79;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+h3{
+  margin-bottom:15px;
+  font-weight:700;
+}
+
+h4{
+  font-weight:700;
+  margin:10px 0;
+}
+
+/*---------------------------------------*/
+/*Header & Nav*/
+/*---------------------------------------*/
+
+.home-header{
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../images/home.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center;
+ height:100vh;
+}
+
+.food-header{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/food-page-header.png);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center;
+ height:100vh;
+}
+
+.restaurant-header{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/restaurant-page-header.png);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center;
+ height:100vh;
+}
+
+.festival-header{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/festival-2.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center;
+ height:100vh;
+}
+
+.home-text-box,
+.food-text-box,
+.restaurant-text-box,
+.festival-text-box{
+  position:absolute;
+  width:1140px;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  color:#ffffff ;
+}
+
+
+.food-text-box p,
+.restaurant-text-box p{
+  margin-top:5px;
+}
+
+
+
+.logo{
+  height:100px;
+  width:auto;
+  float:left;
+  margin-top:18px;
+}
+
+.contact-nav{
+  background-color:#404040;
+  padding-bottom:15px;
+}
+
+
+.nav-bar{
+  float:right;
+  list-style: none;
+  margin-top:45px;
+}
+
+.nav-bar li{
+  display:inline-block;
+  margin-left:45px;
+  font-size:90%;
+  text-transform: uppercase;
+}
+
+.nav-bar li a:link,
+.nav-bar li a:visited
+{
+  color:#ffffff ;
+  text-decoration: none;
+  padding-bottom:4px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-bar li a:hover,
+.nav-bar li a:active{
+  transition: border-bottom 0.2s;
+  border-bottom: 2px solid #d0ba79;
+}
+
+.mob-nav{
+  float:right;
+  margin-top:30px;
+  cursor: pointer;
+  display:none;
+}
+
+.mob-nav ion-icon{
+  font-size:225%;
+  color:#fff;
+}
+
+/*---------------------------------------*/
+/*About Page Home*/
+/*---------------------------------------*/
+
+.about-text{
+  padding:65px 0;
+
+}
+
+
+
+.intro-para{
+  line-height:145%;
+  width:70%;
+  margin-left:15%;
+  margin-bottom:25px;
+}
+
+.icon{
+  display:inline-block;
+  font-size:200%;
+  color:#d0ba79;
+  margin-bottom:15px;
+}
+
+.about-para p{
+  font-size: 90%;
+  line-height:140%;
+
+}
+
+
+/*---------------------------------------*/
+/*Local dishes food page*/
+/*---------------------------------------*/
+
+.food-text{
+  padding:60px 0;
+}
+
+.food-list{
+  margin-top:25px;
+}
+
+.food-images-left,
+.food-images-right{
+  width:400px;
+  height:auto;
+  box-shadow: 8px 10px 5px #ccc;
+
+}
+
+.food-images-left{
+  float:left;
+}
+
+.food-images-right{
+  float:right;
+
+}
+
+.food-desc-left h3{
+  margin-right:80%;
+}
+
+.food-desc-right h3{
+  margin-left:80%;
+}
+
+
+.food-desc-right,
+.food-desc-left{
+  width:63%;
+  line-height:140%;
+}
+
+.food-desc-right{
+  float:right;
+}
+
+.food-desc-left{
+  float:left;
+}
+
+.jollof-text,
+.waakye-text,
+.banku-text,
+.fufu-text,
+.red-red-text{
+  margin-bottom:60px;
+}
+
+
+/*---------------------------------------*/
+/*Local restaurants, restaurant page*/
+/*---------------------------------------*/
+
+.restaurant-text{
+  padding: 60px 0;
+}
+
+.restaurant-list{
+  margin-left:5%;
+}
+
+.restaurant-img{
+  width:270px;
+  height:auto;
+}
+
+.rest-row{
+  margin:35px auto 50px auto;
+}
+
+/* .rest-para{
+  border: 1px solid black;
+} */
+
+.rest-para p{
+  font-size:80%;
+  line-height:135%;
+  width:75%;
+}
+
+.location{font-size:85%;
+margin-top:25px;}
+
+/* .location ion-icon{font-size:125%;} */
+
+
+
+/*---------------------------------------*/
+/*Festivals page*/
+/*---------------------------------------*/
+
+.festival-text{
+  padding: 60px 0;
+}
+
+.festival-name{
+  margin-top: 45px;
+  margin-bottom:95px;
+  /* border-top:1px solid #333; */
+  /* padding-top:15px;
+  padding-bottom:15px; */
+
+}
+
+.festival-img{
+  width:370px;
+  height:auto;
+  box-shadow: 8px 10px 5px #ccc;
+  float:left;
+
+}
+
+
+.festival-para{
+  width:65%;
+  line-height:140%;
+  float:right;
+
+}
+
+
+
+/*---------------------------------------*/
+/*Contact Page*/
+/*---------------------------------------*/
+
+.contact-form{
+
+    padding:40px 0;
+
+
+}
+
+.contact-para{
+  line-height:145%;
+  width:77%;
+  margin: 25px 0 25px auto;
+  margin-left:13%;
+  margin-bottom:25px;
+  text-align:center;
+
+}
+
+
+
+.contact-submit{
+  margin-left:31%;
+  width:40%;
+
+}
+
+.contact-submit div{
+  margin-bottom:35px;
+}
+
+.contact-submit input[type=email],
+.contact-submit input[type=text],
+.contact-submit input[type=textarea],
+.contact-submit textarea{
+  width:100%;
+  padding: 7px 5px;
+  border: 1px solid #404040;
+
+}
+
+.contact-submit textarea{
+  height:100px;
+}
+
+.contact-submit input[type=submit]{
+  width:25%;
+  padding:6px 0;
+  border:1px solid #404040;
+  background-color:#d0ba79;
+  margin-left:35%;
+  /* color:#fff; */
+
+}
+
+
+
+/*---------------------------------------*/
+/*Thank You Page*/
+/*---------------------------------------*/
+
+.thankyou-text{
+  padding:100px 0;
+}
+
+.thankyou-para{
+  text-align:center;
+  margin:25px 0;
+}
+
+.homebtn:link,
+.homebtn:visited{
+  text-decoration:none;
+  background-color:#d0ba79;
+  border:1px solid #404040;
+  padding:15px 30px;
+  border-radius:200px;
+  display:inline-block;
+  font-weight:300;
+  color:#333;
+  margin-left:45%;
+  transition: color 0.2s;
+}
+
+.homebtn:hover,
+.homebtn:active{
+  color:#fff;
+}
+
+
+/*---------------------------------------*/
+/*References*/
+/*---------------------------------------*/
+
+.references{
+  padding:60px 0
+}
+
+.ref-list{
+  margin-top:25px;
+  margin-left:45px;
+}
+
+.ref-links li{
+  margin-bottom:15px;
+}
+
+.ref-links li span{
+  font-style: italic;
+  font-weight:bold;
+
+}
+
+
+/*---------------------------------------*/
+/*Footer*/
+/*---------------------------------------*/
+
+footer{
+  background-color:#404040;
+  padding-top:40px;
+  padding-bottom:15px;
+
+}
+
+.subscription{
+  float:left;
+}
+
+.social-links{
+  float:right;
+  list-style-type: none;
+  font-size:120%;
+}
+
+.social-links li{
+  display:inline-block;
+  margin-right:25px;
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+  text-decoration:none;
+  color:#ffffff ;
+}
+
+.icon-fb,
+.icon-twitter,
+.icon-youtube,
+.icon-google{
+  transition: color 0.2s;
+}
+
+.icon-fb:hover,
+.icon-fb:active{
+  color:#3b5998;
+}
+
+.icon-twitter:hover,
+.icon-twitter:active{
+  color:#1da1f2;
+}
+
+.icon-youtube:hover,
+.icon-youtube:active{
+  color: #ff0000;
+}
+
+.icon-google:hover,
+.icon-google:active{
+  color:#db4437;
+}
+
+.subscription label{
+  color:#ffffff ;
+
+}
+
+.subscription input[type=email],
+.subscription input[type=submit]{
+  padding:8px;
+  margin-top:15px;
+  border-radius:3px;
+}
+
+.subscription input[type=email]{
+font-style: italic;
+width:420px;
+}
+
+.subscription input[type=submit]{
+  background-color:#d0ba79;
+  font-weight:bold;
+  margin-left: 5px;
+
+}
+.bottom-footer{
+  text-align:center;
+  font-size:70%;
+  margin-top:25px;
+  color:#ffffff ;
+  font-weight:250;
+}
+
+.footer-links a:link,
+.footer-links a:visited{
+  color:#ffffff;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-links a:active{
+  color:#d0ba79;
+  transition:color 0.2s;
+}
